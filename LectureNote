@@ -1,0 +1,17 @@
+#Numpy
+
+a = [1,2,3,4]
+b = [10,20,31,3]
+
+# single vector 
+def dot_prod(a, b):
+    dot = 0
+    for i in range(len(a)):
+        dot += a[i] * b[i]
+    return dot
+
+print(dot_prod(a, b))
+
+def dot_prod(a,b):
+    return sum([i*j for i, j in zip (a,b)]) 
+print(dot_prod(a, b))
